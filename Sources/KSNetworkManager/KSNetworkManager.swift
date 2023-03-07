@@ -55,7 +55,7 @@ public struct KSNetworkManager {
     
     
     // MARK: - Initializer
-    init(baseURL: String) {
+    public init(baseURL: String) {
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 10
         configuration.timeoutIntervalForResource = 60
@@ -67,7 +67,7 @@ public struct KSNetworkManager {
     
     
     // MARK: - Request Helpers
-    public func sendRequest<T: Decodable>(
+    func sendRequest<T: Decodable>(
         methodType:HTTPMethod,
         apiName:String,
         parameters:[String:Any]?,
