@@ -67,7 +67,7 @@ public struct KSNetworkManager {
     
     
     // MARK: - Request Helpers
-    func sendRequest<T: Decodable>(
+    public func sendRequest<T: Decodable>(
         methodType:HTTPMethod,
         apiName:String,
         parameters:[String:Any]?,
